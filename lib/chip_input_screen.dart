@@ -30,7 +30,7 @@ class _ChipInputScreenState extends State<ChipInputScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Suggested AI'),
+          title: const Text('Suggested AI Store Type'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),

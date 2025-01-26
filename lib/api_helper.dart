@@ -7,7 +7,7 @@ class ApiHelper {
       'https://api.groq.com/openai/v1/chat/completions';
   static const String apiKey = '';
   static const String initalPrompt =
-      "You are a helpful assistant. Give me a list of 5 suggestions for the given prompt, they should be of same time, like is it is an apple it should suggest orange,banana,and so on and they should be separated by commas. Don't include any other text just the suggestions. Your prompt is:";
+      "You are a helpful assistant. Give me a list of 5 suggestions for the store type based on the given purchased item. They should be of the same type, like if the item is bread, it should suggest bakery, grocery store, etc., and they should be separated by commas. Don't include any other text, just the suggestions. Your purchased item is:";
   // static const String initalPrompt =
   //     "You are a helpful assistant. Give me a list of 5 suggestions for the given prompt, they should be of same time, like is it is an apple it should suggest orange,banana,and so on and they should be separated by commas. Don't include any other text just the suggestions. Your prompt is:";
   static Future<List<String>> getSuggestions(String prompt) async {
