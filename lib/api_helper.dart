@@ -5,9 +5,12 @@ import 'package:http/http.dart' as http;
 class ApiHelper {
   static const String baseUrl =
       'https://api.groq.com/openai/v1/chat/completions';
-  static const String apiKey = '';
+  static const String apiKey =
+      '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';
   static const String initalPrompt =
-      "You are a helpful assistant. Give me a list of 5 suggestions for the store type based on the given purchased item. They should be of the same type, like if the item is bread, it should suggest bakery, grocery store, etc., and they should be separated by commas. Don't include any other text, just the suggestions. Your purchased item is:";
+      "YYou are a helpful assistant. Give me a list of 5 suggestions for nearby stores based on the given store name and its location. They should be of the same type, like if the store is Meerut's KFC, it should suggest nearby fast food outlets, restaurants, or similar places with their exact address, and they should be separated by commas. Don't include any other text, just the suggestions. The given store and location are:";
+  // static const String initalPrompt =
+  //     "You are a helpful assistant. Give me a list of 5 suggestions for the store type based on the given purchased item. They should be of the same type, like if the item is bread, it should suggest bakery, grocery store, etc., and they should be separated by commas. Don't include any other text, just the suggestions. Your purchased item is:";
   // static const String initalPrompt =
   //     "You are a helpful assistant. Give me a list of 5 suggestions for the given prompt, they should be of same time, like is it is an apple it should suggest orange,banana,and so on and they should be separated by commas. Don't include any other text just the suggestions. Your prompt is:";
   static Future<List<String>> getSuggestions(String prompt) async {
